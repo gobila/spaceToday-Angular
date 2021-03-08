@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sobre
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Sobre</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div id="container">
+    <ion-card>
+      <ion-card-title>
+        <h2> desenvolvido por:</h2>
+          <h4>Moises Cardozo de Paula</h4>
+      </ion-card-title>
+      <ion-card-contend>
+        <p>
+          App desenvolvido para o teste da GlobalTec usando Ionic e Angular.
+        </p>
+        <p>
+          A ideia inicial era criar apenas a conexão com a api de forma simples e 
+          focar no layout, entanto achei interessante a possibilidade de 
+          baixar a imagem para galeria do celular.
+        </p>
+        <p>
+          Comecei fazendo em React pois já ter algum conhecimento, mas 
+          notei que ainda faltam alguns recursos na documentação então decidir mudar 
+          para angular, pois a documentação está mais completa.
+        </p>
+        <p>
+          Ainda precisa corrigir alguns bugs, como ele criar um arquivo vazio quando baixa a 
+          imagem, provavelmente algum erro ao criar o nome do arquivo.
+        </p>
+      </ion-card-contend>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="Home" [routerLink]="['/home']"> 
+          <ion-icon name="home" ></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="about"  [routerLink]="['/sobre']">
+          <ion-icon name="person-sharp"></ion-icon>
+          <ion-label>Sobre</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>

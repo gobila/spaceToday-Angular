@@ -1,20 +1,59 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Space Today
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true"> 
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Space Today</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <div id="container" >
+    <ion-card >
+      <ion-card-title>
+        <strong>
+          {{space.title}}
+        </strong>
+      </ion-card-title>
+      <img src="{{space.url}}" alt=""/>
+      <ion-button id="save"(click)="saveImage()">
+        <ion-icon name="download-outline"></ion-icon>
+      </ion-button>
+      <ion-card-hearder>
+        <ion-card-subtitle>
+          <strong>data: </strong><br>
+          {{space.date}}
+        </ion-card-subtitle>
+      </ion-card-hearder>
+      <ion-card-contend>
+        <!--h5>Descrição:</h5-->
+        <br>
+        {{space.explanation | slice: 0:100}}...
+        <br>
+        <ion-button (click)="openModal()">Descrição completa</ion-button>
+      </ion-card-contend>
+    </ion-card>
+   </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="Home" [routerLink]="['/home']"> 
+          <ion-icon name="home" ></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="about"  [routerLink]="['/sobre']">
+          <ion-icon name="person-sharp"></ion-icon>
+          <ion-label>Sobre</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
