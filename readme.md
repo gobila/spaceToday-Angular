@@ -9,6 +9,6 @@ Comecei desenvolvendo com React mas conforme o app tomou forma surgiu a necessid
 
 ## Problemas conhecidos:
 1. Ao clicar em download da imagem é salvo um arquivo corrompido na galaria de fotos, precisa rever a função salveImagem() e convertBlobToBase64;
-2. SplashScreen esticada;
+2. SplashScreen esticada, revisar o nome dos arquivos pois provavelmente isso que esta causando a falha;
 3. Em alguns dispositivos com tela menor o layout não se adapta bem, necessita revisar o css e mais fazer mais teste em dispositivos reais;
-4. Necessário refatora o código, para que o home.ts não fique com mais responsabilidades que o necessário.
+4. Necessário refatora o código, para que o home.ts não fique com mais responsabilidades do que o necessário.

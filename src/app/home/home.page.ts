@@ -35,7 +35,7 @@ export class HomePage {
     })
   }
 
-  //MODAL
+  //Chamando a modal
   dataReturn: any;
   async openModal(){
     const modal = await this.modalController.create({
@@ -53,6 +53,7 @@ export class HomePage {
     });
     return await modal.present();
   }
+  
 //Salvando imagem
  saveImage(){
   this.imgUrl=this.space.url;
