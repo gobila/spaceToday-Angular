@@ -1,5 +1,6 @@
-# Teste Frontend com Ionic da Globaltec
-Esse teste visa a integração de uma api da Nasa que retorna todo dia uma nova foto do espaço e outros dados
+# Sobre o projeto
+Esse projeto surgiu um teste para vaga Frontend com Ionic, o teste visava a integração de uma api da Nasa que retorna todo dia uma nova foto do espaço e outros dados, deixando o acessivel e bonito.
+Com o resultado do teste concluido, continuarei a resolver problemas que encontrei e melhorar o visual como forma de estudo do Ionic e Angular
 
 ## Ideia
 A ideia inicial do app seria foca apenas fazer a ligação com a api e focar em criar um layout, entretanto sugiram algumas ideia para melhora a experiencia e dar mais funções ao app, como baixar a imagem para a galeria, com um layout mais limpo possível.
